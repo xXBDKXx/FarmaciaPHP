@@ -9,11 +9,13 @@
 </head>
 <body>
     <form method="POST">
-        <h1>Pagina de Cadastros da Rede de Farmácia X</h1>
+        <img id="img" name="img" src="Umbrella1.png">
+        <h1>Pagina de Cadastros da Rede Farmaceutica Umbrella Corporation</h1>
         <button> <a href="farmaciaA.php"> Farmácia A </a></button>
         <button> <a href="farmaciaB.php"> Farmácia B </a></button><br><br>
         <button> <a href="farmaciaC.php"> Farmácia C </a></button>
         <button> <a href="farmaciaD.php"> Farmácia D </a></button>
+        <button> <a href="telaADM.php"> Adm </a></button>
     </form>
 </body>
 </html>

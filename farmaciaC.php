@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <title>Cadastro Farmacia A</title>
+    <title>Cadastro Farmacia C</title>
 </head>
 <body>
     <?php include 'cadastro.php'; ?>
     <form method="POST">
         <img id="img" name="img" src="Umbrella1.png">
-        <h1>Farmácia A</h1>
+        <h1>Farmácia C</h1>
 
         <label>Plano de Saúde ou Uso de Farmacia Popular: </label>
         <input  type="checkbox" name="tSP" value="True" id="tSP" onchange="submit()"> Sim </input>
@@ -60,10 +60,8 @@
             $_SESSION['telefone']      = $_POST['tTelefone'];
             $_SESSION['listPlano']     = $_POST['listPlano'];
             $_SESSION['listFarm']      = $_POST['listFarm'];
-            
         ?>
         </button>
-
 
         <?php 
             function count_visits() {
@@ -83,7 +81,7 @@
             // Call the function
             echo count_visits();
         ?>
-
+        
         <br><br>
         <button id="Voltar"> <a href="index.php"> Voltar </a></button>
     </form>

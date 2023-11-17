@@ -6,12 +6,16 @@
         private string $nome;
         private int $RG;
         private string $telefone;
+        private int $listPlano;
+        private int $listFarm;
 
         public function __construct($nome, $RG, $telefone)
         {
             $this->setNome($nome);
             $this->setRG($RG);
             $this->setEndereco($telefone);
+            $this->setPlano($listPlano);
+            $this->setFarm($listFarm);
         }//Fim do Construtor
 
         //Métodos consultores e de consulta
@@ -30,6 +34,17 @@
         {
             return $this->telefone;
         }//Fim do Método
+
+        public function getPlano()
+        {
+            return $this->listPlano;
+        }//Fim do Método
+
+        public function getFarm()
+        {
+            return $this->listFarm;
+        }//Fim do Método
+
 
 
         //Fim dos Gets
@@ -50,10 +65,49 @@
             $this->endereco = $endereco;
         }//Fim do Método
 
+        public function setPlano($listPlano)
+        {
+            $this->listPlano = $listPlano;
+        }//Fim do Método
+
+        public function setFarm($listFarm)
+        {
+            $this->listFarm = $listFarm;
+        }//Fim do Método
+
+
+
         //Fim dos Sets
         //----------------------------
-        
-    }//Fim da Classe
 
+        public function ContadorB($farmB)
+        {
+            $farmB += 1;
+            return $farmB;
+        }//Fim do Metodo
+
+        public function ContadorC($farmC)
+        {
+            $farmC += 1;
+            return $farmC;
+        }//Fim do Metodo
+
+        public function ContadorD($farmD)
+        {
+            $farmD += 1;
+            return $farmD;
+        }//Fim do Metodo
+
+
+        public function imprimir()
+        {
+            $msg = "\n\nCPF: ".$this->getNome(). 
+                    "\nNome: ".$this->getRG(). 
+                    "\nTelefone: ".$this->getTelefone(). 
+                    "\nEndereco: ".$this->getPlano(). 
+                    "\nCidade: ".$this->getFarm();
+            return $msg;
+        }//Fim do Metodo
+    }//Fim da Classe
 //Fim do Projeto
 ?>
