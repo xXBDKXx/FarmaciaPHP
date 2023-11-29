@@ -80,25 +80,6 @@
         //Fim dos Sets
         //----------------------------
 
-        public function ContadorB($farmB)
-        {
-            $farmB += 1;
-            return $farmB;
-        }//Fim do Metodo
-
-        public function ContadorC($farmC)
-        {
-            $farmC += 1;
-            return $farmC;
-        }//Fim do Metodo
-
-        public function ContadorD($farmD)
-        {
-            $farmD += 1;
-            return $farmD;
-        }//Fim do Metodo
-
-
         public function imprimir()
         {
             $msg = "\n\nCPF: ".$this->getNome(). 

@@ -64,26 +64,6 @@
         ?>
         </button>
 
-
-        <?php 
-            function count_visits() {
-                // Check if the count variable is set
-                if(!isset($_SESSION['count'])) {
-                    // If it's not set, initialize it to 0
-                    $_SESSION['count'] = 0;
-                }
-            
-                // Increment the count variable
-                $_SESSION['count']++;
-            
-                // Return the count variable
-                return $_SESSION['count'];
-            }
-            
-            // Call the function
-            echo count_visits();
-        ?>
-
         <br><br>
         <button id="Voltar"> <a href="index.php"> Voltar </a></button>
     </form>
